@@ -1,5 +1,4 @@
 @import "config";
-@import "utilities";
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +11,7 @@ body {
 .login-form-section {
   background: $bg-color;
   height: fit-content;
+  padding: 7rem 2.6rem 1rem;
   .login-form {
     &__img {
       margin: 0 auto 3rem auto;
@@ -88,4 +88,46 @@ body {
 }
 .hero-section {
   display: none;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+  .login-form-section {
+    padding: 2rem 6.6rem 1rem;
+    .login-form {
+      &__img {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .hero-section {
+    display: block;
+    background: #000;
+    padding-left: 5.7rem;
+    &__title {
+      margin: 9.2rem 0 2rem;
+    }
+    &__slogan {
+      display: block;
+      width: 150px;
+      position: absolute;
+      right: 40px;
+      bottom: 40px;
+    }
+    .button--gradient {
+      display: inline-block;
+      padding: 0.8rem 0;
+      width: 35%;
+      color: #fff;
+      background: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+      border: none;
+      font-weight: 600;
+      font-size: 1.02rem;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
 }
