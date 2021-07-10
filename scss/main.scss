@@ -11,6 +11,7 @@ body {
 
 .login-form-section {
   background: $bg-color;
+  height: fit-content;
   .login-form {
     &__img {
       margin: 0 auto 3rem auto;
@@ -19,23 +20,72 @@ body {
     &__group {
       display: flex;
       flex-direction: column;
-      padding: 1rem 0;
+      padding: 0.8rem 0;
     }
     &__label {
       color: #fffefe;
       font-weight: 400;
       font-size: 1.01rem;
+      line-height: 1.5;
     }
     &__input {
       background: transparent;
       height: 2.6rem;
       width: 100%;
-      border: 1px solid #dddcdc80;
+      border: 1px solid hsla(0, 0%, 100%, 0.95);
       border-radius: 3px;
 
       &:focus {
         border-color: yellow;
       }
     }
+    &__link-list {
+      list-style: none;
+      text-align: center;
+      margin-top: 2.5rem;
+
+      :first-child {
+        margin-bottom: 2rem;
+      }
+    }
+    &__link {
+      color: #2ea0d6;
+    }
   }
+  .button {
+    padding: 0.8rem 0;
+    width: 100%;
+    color: #fff;
+    background: $bg-btn-light;
+    border: none;
+    font-weight: 600;
+    font-size: 1.02rem;
+    text-decoration: none;
+    text-align: center;
+
+    &--bg-dark {
+      @extend .button;
+      display: inline-block;
+      background: #8a99a840;
+    }
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0;
+    background: hsla(0, 0%, 100%, 0.9);
+  }
+  .footer {
+    color: #ffffffb3;
+    font-size: 0.745rem;
+    text-align: center;
+    margin-top: 3.5rem;
+    &__link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+.hero-section {
+  display: none;
 }
