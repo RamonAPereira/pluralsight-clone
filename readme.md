@@ -2,7 +2,7 @@
 
 ## Github pages link:
 
-[GIthub pages](https://ramonapereira.github.io/pluralsight-clone/)
+[Github pages](https://ramonapereira.github.io/pluralsight-clone/)
 
 ## Full page Website:
 
