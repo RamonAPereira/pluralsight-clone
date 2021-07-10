@@ -1,0 +1,14 @@
+{
+  "name": "pluralsight-login-clone",
+  "version": "1.0.0",
+  "description": "clone da tela de login do pluralsight",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "ramon pereira",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
