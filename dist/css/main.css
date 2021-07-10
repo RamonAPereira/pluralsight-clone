@@ -82,12 +82,6 @@ body {
     padding-left: 5.7rem; }
     .hero-section__title {
       margin: 9.2rem 0 2rem; }
-    .hero-section__slogan {
-      display: block;
-      width: 150px;
-      position: absolute;
-      right: 40px;
-      bottom: 40px; }
     .hero-section .button--gradient {
       display: inline-block;
       padding: 0.8rem 0;
